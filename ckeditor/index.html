@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>CKEditor: A brief introduction</title>
+	
+	<link href="slideshow.css" rel="stylesheet" />
+	<link href="theme.css" rel="stylesheet" />
+	<link href="talk.css" rel="stylesheet" />
+	<script src="prefixfree.min.js"></script>
+</head>
+<body data-duration="10">
+
+<header id="intro" class="slide">
+	
+			<img src="logo.png" alt="CSSS: CSS-based SlideShow System" />
+	
+	<p class="attribution">By Fadi Zahhar</p>
+</header>
+<section>
+	<header class="slide">
+		<h1>Introduction</h1>
+	</header>
+	
+	<section class="slide" title="CSSS: Introduction">
+		<h2>What is CKEditor?</h2>
+		<p class="delayed">CKEditor is a rich text editor that enables you to write content inside of web pages or online applications.</p>
+		<ul>
+			<li class="delayed">The working wordpress version is 4.5.3.3</li>
+			<li class="delayed">The promessing community CKEditor is 5</li>
+			<li class="delayed">Version 5 was rewritten from scratch and a huge diffrence between the two versions.</li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+		<h2>History</h2>
+		<ul>
+			<li class="delayed">The first version of CKEditor, under the name FCKeditor, was released in March 2003 by Frederico Caldeira Knabben, the creator of the editor and the project's Benevolent Dictator for Life. After reaching more than 3 million downloads, FCKeditor was completely reviewed and redesigned into CKEditor 3, with special attention given to performance, accessibility and a new UI.</li>
+			<li class="delayed">In December 2012, CKEditor 4 was released with an Inline Editing solution, reformatted source code, enhanced DOM and CSS performance. The server-side implementations were removed.</li>
+			<li class="delayed">After 5 years, in 2017, CKEditor 5 Alpha was introduced. With its code rewritten from scratch, CKEditor 5 has a new data model and architecture. CKEditor 5 is a JavaScript framework offering a rich API to develop any editing solution. CKEditor 5 also offers builds, which are ready-to-use editors. Currently, three CKEditor 5 Builds are available to download: Classic, Inline and Balloon.</li>
+		</ul>
+	</section>
+	
+	<section class="slide" id="navigation">
+		<h2>CKEditor Ecosystem</h2>
+		<p class="delayed">In October 2017, CKSource launched the CKEditor Ecosystem, which consists of different products, these include:</p>
+		<ul>
+			<li class="delayed">CKEditor 5 Builds and CKEditor 5 Framework</li>
+			<li class="delayed">CKEditor Cloud Services, which support collaboration and uploading images.</li>
+			<li class="delayed">Letters, a software component which makes real-time collaborative editing possible inside any application</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<header class="slide">
+		<h1>Features</h1>
+	</header>
+	
+	<section class="slide">
+		<h2>CKEditor 4</h2>
+		<p class="delayed">has features found in desktop word processors such as styles formatting (bold, italic, underline, bulleted and numbered lists), tables, block quoting, web resource linking, safe undo function, image inserting, paste from Word and other common HTML formatting tools. </p>
+		<p class="delayed">Also CKEditor 4 has built-in spell checker functionality provided as plug-ins by WebSpellChecker LLC. By default, it is available for free with a banner ad.[6] It checks the spelling of the text and marks all errors with a red wavy line and allows to choose one of the correct suggestions.</p>
+		<p class="delayed">There are currently many plugins available with CKEditor 4 to serve different needs, e.g. CKFinder and Accessibility Checker (the CKSource’s plugins). CKFinder is a file manager for including files and images within content created with the editors. It is compatible with both CKEditor 4 and 5 and is available under commercial license.</p>
+		<p class="delayed">Accessibility Checker provides an innovative solution which lets you inspect the accessibility level of content created in CKEditor and immediately solve any accessibility issues that are found. It is available under both Open Source and commercial licenses.</p>
+	</section>
+	
+	<section class="slide">
+		<h2>Real-time collaborative editing</h2>
+		<ul>
+			<li class="delayed">CKEditor 5’s architecture and custom data model makes it possible to enable real-time collaborative editing.</li>
+			<li class="delayed">A custom collaborative solution can be build by using the CKEditor 5 Framework components and real-time collaborative editing can be enabled by connecting to the CKEditor Cloud Services.</li>
+			<li class="delayed">A ready to use, drop-in component based on CKEditor 5 (Letters) offers a complete solution for real-time collaborative writing.</li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+		<h2>Demo Of CKEditor 5</h2>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/SJVbAxvLJJY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+	</section>
+	
+	<section class="slide">
+		<h2>Browser Compatibility</h2>
+		<p class="delayed">CKEditor 4 is fully compatible with most internet browsers, including latest stable releases from Google Chrome, Firefox, Safari, Microsoft Edge, Opera and Internet Explorer 10 and 11.[3] In mobile environments, it has close to full support in Safari (iOS6 +) and Chrome(Android)</p>
+		<p class="delayed">CKEditor 5 is also compatible with Google Chrome, Firefox, Safari, Opera and Microsoft Edge. However, it does not support Internet Explorer 11 yet.</p>
+	</section>
+	
+	
+	
+</section>
+<footer class="slide" title="The End">
+	<h2>Thank you!</h2>
+</footer>
+
+<script src="slideshow.js"></script>
+<script src="plugins/css-edit.js"></script>
+<script src="plugins/css-snippets.js"></script>
+<script src="plugins/css-controls.js"></script>
+<script src="plugins/code-highlight.js"></script>
+<script>
+var slideshow = new SlideShow();
+
+var snippets = document.querySelectorAll('.snippet');
+for(var i=0; i<snippets.length; i++) {
+	new CSSSnippet(snippets[i]);
+}
+
+var cssControls = document.querySelectorAll('.css-control');
+for(var i=0; i<cssControls.length; i++) {
+	new CSSControl(cssControls[i]);
+}
+</script>
+	
+</body>
+</html>
