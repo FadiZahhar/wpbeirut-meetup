@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<title>Timestamp plugin for Wordpress meetup</title>
+  <!-- adding the ckeditor from cdn version 4.8 -->
+	<script src="https://cdn.ckeditor.com/4.8.0/standard-all/ckeditor.js"></script>
+</head>
+
+<body>
+<!-- textarea that will transfer to ckeditor -->
+	<textarea cols="80" id="editor1" name="editor1" rows="10">
+	</textarea>
+
+	<script>
+// this is how we add external plugin by calling the name as first then the location folder
+// here we are using the relative path
+// then adding the plugin.js
+CKEDITOR.plugins.addExternal( 'timestamp', '/timestamp/', 'plugin.js' );
+		CKEDITOR.replace( 'editor1', {
+			extraPlugins: 'timestamp'
+		} );
+	</script>
+</body>
+
+</html>
